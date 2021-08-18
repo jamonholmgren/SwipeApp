@@ -28,6 +28,9 @@ export const CharacterStoreModel = types
         __DEV__ && console.tron.log(result.kind)
       }
     },
+    removeCharacter(character) {
+      self.characters.remove(character)
+    },
   }))
 
 type CharacterStoreType = Instance<typeof CharacterStoreModel>
